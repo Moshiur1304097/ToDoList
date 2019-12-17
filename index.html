@@ -7,22 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
     <title>To Do List</title>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap" rel="stylesheet" />
-    <link re="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
     <h1 class="title">Stuf I need to do...</h1>
-    <div class="all-task">
+    <div class="all-tasks">
         <h2 class="task-list-title">My Lists</h2>
         <ul class="task-list">
-            <li clas="active-list"> Youtube</li>
-            <li>Work</li>
-            <li>Grocery</li>
+            <li class="list-name active-list"> Youtube</li>
+            <li class="list-name">Work</li>
+            <li class="list-name">Grocery</li>
         </ul>
 
         <form action="">
             <input type="text" class="new list" placeholder="new list name" aria-label="new list name" />
-            <button class="btn list" aria-label="create new list">+</button>
+            <button class="btn create" aria-label="create new list">+</button>
         </form>
     </div>
 
@@ -55,15 +55,17 @@
                     <input type="checkbox" id="task-3" />
                     <label for="task-3">
                         <span class="custom-checkbox"></span>
-                        third task</label>
+                        a third task</label>
                 </div>
             </div>
+
             <div class="new-task-creator">
                 <form action="">
                     <input type="text" class="new list" placeholder="new task name" aria-label="new task name" />
-                    <button class="btn task" aria-label="create new task">+</button>
+                    <button class="btn create" aria-label="create new task">+</button>
                 </form>
             </div>
+
             <div class="delete-stuff">
                 <button class="btn delete"> Clear comleted tasks</button>
                 <button class="btn delete"> Delete List</button>
