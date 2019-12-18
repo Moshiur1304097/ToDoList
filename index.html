@@ -17,10 +17,10 @@
         <h2 class="task-list-title">My Lists</h2>
         <ul class="task-list" data-lists>
             <!-- 
-                <li class="list-name active-list"> Youtube</li>
-                <li class="list-name">Work</li>
-                <li class="list-name">Grocery</li>
-             -->
+                    <li class="list-name active-list"> Youtube</li>
+                    <li class="list-name">Work</li>
+                    <li class="list-name">Grocery</li>
+                -->
         </ul>
 
         <form action="" data-new-list-form>
@@ -47,13 +47,22 @@
                     <button class="btn create" aria-label="create new task">+</button>
                 </form>
             </div>
-        </div>
-
-        <div class="delete-stuff">
-            <button class="btn delete" data-clear-complete-tasks-button> Clear comleted tasks</button>
-            <button class="btn delete" data-delete-list-button> Delete List</button>
+            <div class="delete-stuff">
+                <button class="btn delete" data-clear-complete-tasks-button> Clear comleted tasks</button>
+                <button class="btn delete" data-delete-list-button> Delete List</button>
+            </div>
         </div>
     </div>
+
+    <template id="task-template">
+        <div class="task">
+            <input type="checkbox"/>
+            <label>
+                <span class="custom-checkbox"> </span>
+            </label>
+        </div>
+    </template>
+
 
     <script defer src="script.js"></script>
 </body>
